@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Are You Legal? 🎉</title>
+  <style>
+    :root {
+      --color-pink: #ffe6f0;
+      --color-hotpink: #ff6ec7;
+      --color-white: #fff;
+      --color-black: #333;
+      --color-text-pink: #ff7892;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Comic Neue", cursive;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      /* Background GIF */
+      background: url('huh.gif') center/cover no-repeat;
+      overflow: hidden;
+    }
+
+    .kawaii-container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      max-width: 600px;
+    }
+
+    .kawaii-title {
+      font-size: 2rem;
+      color: var(--color-text-pink);
+      text-shadow: 2px 2px var(--color-hotpink);
+      margin-bottom: 1rem;
+    }
+
+    .kawaii-btn {
+      margin: 0.5rem;
+      padding: 0.7rem 1.4rem;
+      font-size: 1.1rem;
+      background: var(--color-hotpink);
+      border: none;
+      border-radius: 30px;
+      color: var(--color-white);
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+
+    .kawaii-btn:hover {
+      transform: scale(1.1);
+      background: #ff4da6;
+    }
+
+    .button-container {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="kawaii-container">
+    <h1 class="kawaii-title">rawrrr so you are legal now huh?😏😏🥵💦</h1>
+    <div class="button-container" id="buttons">
+      <button class="kawaii-btn" id="yesBtn">Yes 🎀</button>
+      <button class="kawaii-btn" id="noBtn">No ❌</button>
+    </div>
+  </div>
+
+  <script>
+    const yesBtn = document.getElementById('yesBtn');
+    const noBtn = document.getElementById('noBtn');
+
+    yesBtn.addEventListener('click', () => {
+      window.location.href = 'lmao.html'; // Redirect to congratulations page
+    });
+
+    noBtn.addEventListener('click', () => {
+      // Only hide the No button
+      noBtn.style.display = 'none';
+    });
+  </script>
+</body>
+</html>

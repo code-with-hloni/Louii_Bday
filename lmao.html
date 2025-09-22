@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎉 Happy 21st Birthday! 🎉</title>
+  <link rel="stylesheet" href="thecss.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Comic Neue", cursive;
+      background: var(--color-pink);
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .congrats-container {
+      position: relative;
+      z-index: 10;
+      background: var(--color-white);
+      padding: 2rem 3rem;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      max-width: 600px;
+    }
+
+    .congrats-container h1 {
+      font-size: 2.5rem;
+      color: var(--color-text-pink);
+      text-shadow: 2px 2px var(--color-hotpink);
+      margin-bottom: 1rem;
+    }
+
+    .congrats-container p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: var(--color-black);
+    }
+
+    .gif {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      pointer-events: none;
+      animation: float 10s linear infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(180deg); }
+      100% { transform: translateY(0) rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="congrats-container">
+    <h1>🎉 Happy 21st Birthday baby! 🎉</h1>
+    <p>Im boutta goon on You rn rawrr😏😏🥵🥵💦</p>
+  </div>
+
+  <script>
+    // Array of GIF URLs (replace with your own if you like)
+    const gifs = [
+      "freaky1.gif",
+      "freaky2.gif",
+      "freaky3.gif",
+      "freaky4.gif",
+      "freaky5.gif",
+      "freaky6.gif",
+      "freaky7.gif",
+        "freaky8.gif",
+        "freaky9.gif",
+        "freaky10.gif",
+          "freaky1.gif",
+      "freaky2.gif",
+      "freaky3.gif",
+      "freaky4.gif",
+      "freaky5.gif",
+      "freaky6.gif",
+      "freaky7.gif",
+        "freaky8.gif",
+        "freaky9.gif",
+        "freaky10.gif",
+    ];
+
+    const totalGifs = 15; // number of GIFs on the page
+
+    for (let i = 0; i < totalGifs; i++) {
+      const img = document.createElement("img");
+      img.src = gifs[Math.floor(Math.random() * gifs.length)];
+      img.className = "gif";
+      img.style.top = Math.random() * window.innerHeight + "px";
+      img.style.left = Math.random() * window.innerWidth + "px";
+      img.style.width = 50 + Math.random() * 100 + "px"; // random size
+      img.style.height = "auto";
+      img.style.animationDuration = 5 + Math.random() * 10 + "s";
+      document.body.appendChild(img);
+    }
+  </script>
+</body>
+</html>
