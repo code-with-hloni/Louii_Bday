@@ -1034,25 +1034,25 @@ body {
     overflow-x: hidden;
 }
 
-/* dreamy animated background */
+
 @keyframes bgFlow {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-/* softer borders */
+
 :root {
     --color-pink: #ffe6f0;
     --color-white: #fff;
-    --color-black: #ffb6c1; /* make borders pink instead of black */
+    --color-black: #ffb6c1; 
     --color-text-pink: #ff85a1;
     --color-heart: #ff6f91;
     --color-bg-letter: #fff8f9;
     --color-border: #ffd6e7;
 }
 
-/* kawaii title */
+
 .title .happy, .title .birthday {
     font-family: "Coiny", cursive;
     font-size: 3.5rem;
@@ -1061,7 +1061,7 @@ body {
     animation: wobble 2s infinite ease-in-out;
 }
 
-/* cute wobble animation */
+
 @keyframes wobble {
     0%,100% { transform: rotate(-2deg) scale(1); }
     50% { transform: rotate(2deg) scale(1.05); }
@@ -1111,7 +1111,7 @@ body {
     padding: 0.7rem 1.4rem;
     font-size: 1.1rem;
     font-family: "Comic Neue", cursive;
-    background: #ff6ec7; /* hot pink */
+    background: #ff6ec7;
     color: #fff;
     border-radius: 30px;
     cursor: pointer;
@@ -1121,11 +1121,11 @@ body {
 
 .kawaii-btn:hover {
     transform: scale(1.1);
-    background: #ff4da6; /* slightly darker pink on hover */
+    background: #ff4da6; 
 }
 
 .bottom-text {
-    position: fixed;           /* stick at the bottom */
+    position: fixed;          
     left: 50%;
     transform: translateX(-50%);
     font-size: 6rem;          /* biiig! */
@@ -1140,3 +1140,4 @@ body {
     align-items: center; 
      margin-left: 370px;
 }
+
